@@ -60,7 +60,6 @@ export const Up = styled.div`
   padding: 3rem;
   border-top-right-radius: 22px;
   border-top-left-radius: 22px;
-  background-color: #bdbdbd;
   transition: background-color 0.5s;
 `;
 export const Down = styled.div`
@@ -71,7 +70,6 @@ export const Down = styled.div`
   border-bottom-right-radius: 22px;
   border-bottom-left-radius: 22px;
   transition: background-color 0.5s;
-  background-color: #616161;
 `;
 export const Chip = styled.div`
   width: 5rem;
@@ -169,23 +167,10 @@ export const FormContainer = styled.div`
   display: grid;
   grid-column-gap: 1rem;
   grid-template-columns: auto auto;
-  grid-template-rows: 9rem 9rem 9rem;
-  grid-template-areas: 'name name' 'number number' 'expiration security';
+  grid-template-rows: 8rem 8rem 8rem;
   max-width: 40rem;
   padding: 2rem;
   color: #707070;
-  &:first-of-type {
-    grid-area: name;
-  }
-  &:nth-of-type(2) {
-    grid-area: number;
-  }
-  &:nth-of-type(3) {
-    grid-area: expiration;
-  }
-  &:nth-of-type(4) {
-    grid-area: security;
-  }
 `;
 export const FieldContainer = styled.div`
   position: relative;
@@ -197,7 +182,7 @@ export const Label = styled.div`
 `;
 export const Input = styled.input`
   margin-top: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
   font-size: 1.6rem;
   width: 100%;
   border-radius: 3rem;
@@ -212,4 +197,18 @@ export const CardIcon = styled.img`
 
   z-index: 4;
   border: 1px solid black;
+`;
+export const RandomButton = styled.button`
+  width: auto;
+
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #bdbdbd;
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    transition: background-color 0.5s;
+    background-color: #616161;
+  }
 `;
